@@ -1,0 +1,473 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{702C93D3-4BB1-4CE2-BCDF-C9AC310A0B39}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApplication1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApplication1</RootNamespace>
+    <AssemblyName>Sistema_Gimnasio</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Sistema_Gimnasio.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Sistema_Gimnasio.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\iconoGim.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="01_InscripciónDeSocio\frmEmitirComp.Designer.vb">
+      <DependentUpon>frmEmitirComp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="01_InscripciónDeSocio\frmEmitirComp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01_InscripciónDeSocio\frmEmitirCred.Designer.vb">
+      <DependentUpon>frmEmitirCred.vb</DependentUpon>
+    </Compile>
+    <Compile Include="01_InscripciónDeSocio\frmEmitirCred.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01_InscripciónDeSocio\frmRegistrarPago.Designer.vb">
+      <DependentUpon>frmRegistrarPago.vb</DependentUpon>
+    </Compile>
+    <Compile Include="01_InscripciónDeSocio\frmRegistrarPago.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01_InscripciónDeSocio\frmRegistrarSocio.Designer.vb">
+      <DependentUpon>frmRegistrarSocio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="01_InscripciónDeSocio\frmRegistrarSocio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="02_InscripciónDeProfesor\frmEmitirCredProf.Designer.vb">
+      <DependentUpon>frmEmitirCredProf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="02_InscripciónDeProfesor\frmEmitirCredProf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="02_InscripciónDeProfesor\frmEmitirItinerario.Designer.vb">
+      <DependentUpon>frmEmitirItinerario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="02_InscripciónDeProfesor\frmEmitirItinerario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="02_InscripciónDeProfesor\frmEstablecerHC.Designer.vb">
+      <DependentUpon>frmEstablecerHC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="02_InscripciónDeProfesor\frmEstablecerHC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="02_InscripciónDeProfesor\frmRegistrarProf.Designer.vb">
+      <DependentUpon>frmRegistrarProf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="02_InscripciónDeProfesor\frmRegistrarProf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="03_PagoDeCuotas\frmEmitirCompPago.Designer.vb">
+      <DependentUpon>frmEmitirCompPago.vb</DependentUpon>
+    </Compile>
+    <Compile Include="03_PagoDeCuotas\frmEmitirCompPago.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="03_PagoDeCuotas\frmPagarCuotas.Designer.vb">
+      <DependentUpon>frmPagarCuotas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="03_PagoDeCuotas\frmPagarCuotas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="04_IncluirSocioAClase\frmIncluirSocioAClase.Designer.vb">
+      <DependentUpon>frmIncluirSocioAClase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="04_IncluirSocioAClase\frmIncluirSocioAClase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="05_MantenimientoDeMaquinas\frmPlanilla.Designer.vb">
+      <DependentUpon>frmPlanilla.vb</DependentUpon>
+    </Compile>
+    <Compile Include="05_MantenimientoDeMaquinas\frmPlanilla.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="05_MantenimientoDeMaquinas\frmMantenimiento.Designer.vb">
+      <DependentUpon>frmMantenimiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="05_MantenimientoDeMaquinas\frmMantenimiento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="07_Control de Acceso\frmAccesoSocio.Designer.vb">
+      <DependentUpon>frmAccesoSocio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="07_Control de Acceso\frmAccesoSocio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="07_Control de Acceso\frmInfoPago.Designer.vb">
+      <DependentUpon>frmInfoPago.vb</DependentUpon>
+    </Compile>
+    <Compile Include="07_Control de Acceso\frmInfoPago.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="08_GestionDeRutinas\frmGestionRutinas.Designer.vb">
+      <DependentUpon>frmGestionRutinas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="08_GestionDeRutinas\frmGestionRutinas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="10_IngresoAClaseGratis\frmClaseGratis.Designer.vb">
+      <DependentUpon>frmClaseGratis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="10_IngresoAClaseGratis\frmClaseGratis.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM_Otros\frmConfiguracionCuenta.Designer.vb">
+      <DependentUpon>frmConfiguracionCuenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ABM_Otros\frmConfiguracionCuenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM_Otros\frmDefinirNuevoPrecio.Designer.vb">
+      <DependentUpon>frmDefinirNuevoPrecio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ABM_Otros\frmDefinirNuevoPrecio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="06_Calculo de Sueldos\frmInfoLiquidacion.Designer.vb">
+      <DependentUpon>frmInfoLiquidacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="06_Calculo de Sueldos\frmInfoLiquidacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="06_Calculo de Sueldos\frmLiquidacionProf.Designer.vb">
+      <DependentUpon>frmLiquidacionProf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="06_Calculo de Sueldos\frmLiquidacionProf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="06_Calculo de Sueldos\reciboSueldo.Designer.vb">
+      <DependentUpon>reciboSueldo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="06_Calculo de Sueldos\reciboSueldo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM_Otros\frmActualizarClase.Designer.vb">
+      <DependentUpon>frmActualizarClase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ABM_Otros\frmActualizarClase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM_Otros\frmActualizarPrecio.Designer.vb">
+      <DependentUpon>frmActualizarPrecio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ABM_Otros\frmActualizarPrecio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM_Otros\frmActualizarProf.Designer.vb">
+      <DependentUpon>frmActualizarProf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ABM_Otros\frmActualizarProf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM_Otros\frmActualizarUsuario.Designer.vb">
+      <DependentUpon>frmActualizarUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ABM_Otros\frmActualizarUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM_Otros\frmEliminarClase.Designer.vb">
+      <DependentUpon>frmEliminarClase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ABM_Otros\frmEliminarClase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM_Otros\frmEliminarPrecio.Designer.vb">
+      <DependentUpon>frmEliminarPrecio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ABM_Otros\frmEliminarPrecio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM_Otros\frmEliminarUsuario.Designer.vb">
+      <DependentUpon>frmEliminarUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ABM_Otros\frmEliminarUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="09_AtencionConNutricionista\frmAtencionConN.Designer.vb">
+      <DependentUpon>frmAtencionConN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="09_AtencionConNutricionista\frmAtencionConN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ABM_Otros\frmCrearNuevaClase.Designer.vb">
+      <DependentUpon>frmCrearNuevaClase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ABM_Otros\frmCrearNuevaClase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM_Otros\frmEliminarProf.Designer.vb">
+      <DependentUpon>frmEliminarProf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ABM_Otros\frmEliminarProf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIniciarSesion.Designer.vb">
+      <DependentUpon>frmIniciarSesion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmIniciarSesion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM_Otros\frmInscribirUsuario.Designer.vb">
+      <DependentUpon>frmInscribirUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ABM_Otros\frmInscribirUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.vb">
+      <DependentUpon>frmMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuAdmi.Designer.vb">
+      <DependentUpon>frmMenuAdmi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuAdmi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="01_InscripciónDeSocio\frmEmitirComp.resx">
+      <DependentUpon>frmEmitirComp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01_InscripciónDeSocio\frmEmitirCred.resx">
+      <DependentUpon>frmEmitirCred.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01_InscripciónDeSocio\frmRegistrarPago.resx">
+      <DependentUpon>frmRegistrarPago.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01_InscripciónDeSocio\frmRegistrarSocio.resx">
+      <DependentUpon>frmRegistrarSocio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="02_InscripciónDeProfesor\frmEmitirCredProf.resx">
+      <DependentUpon>frmEmitirCredProf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="02_InscripciónDeProfesor\frmEmitirItinerario.resx">
+      <DependentUpon>frmEmitirItinerario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="02_InscripciónDeProfesor\frmEstablecerHC.resx">
+      <DependentUpon>frmEstablecerHC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="02_InscripciónDeProfesor\frmRegistrarProf.resx">
+      <DependentUpon>frmRegistrarProf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="03_PagoDeCuotas\frmEmitirCompPago.resx">
+      <DependentUpon>frmEmitirCompPago.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="03_PagoDeCuotas\frmPagarCuotas.resx">
+      <DependentUpon>frmPagarCuotas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="04_IncluirSocioAClase\frmIncluirSocioAClase.resx">
+      <DependentUpon>frmIncluirSocioAClase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="05_MantenimientoDeMaquinas\frmPlanilla.resx">
+      <DependentUpon>frmPlanilla.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="05_MantenimientoDeMaquinas\frmMantenimiento.resx">
+      <DependentUpon>frmMantenimiento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="07_Control de Acceso\frmAccesoSocio.resx">
+      <DependentUpon>frmAccesoSocio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="07_Control de Acceso\frmInfoPago.resx">
+      <DependentUpon>frmInfoPago.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="08_GestionDeRutinas\frmGestionRutinas.resx">
+      <DependentUpon>frmGestionRutinas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="10_IngresoAClaseGratis\frmClaseGratis.resx">
+      <DependentUpon>frmClaseGratis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM_Otros\frmConfiguracionCuenta.resx">
+      <DependentUpon>frmConfiguracionCuenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM_Otros\frmDefinirNuevoPrecio.resx">
+      <DependentUpon>frmDefinirNuevoPrecio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="06_Calculo de Sueldos\frmInfoLiquidacion.resx">
+      <DependentUpon>frmInfoLiquidacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="06_Calculo de Sueldos\frmLiquidacionProf.resx">
+      <DependentUpon>frmLiquidacionProf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="06_Calculo de Sueldos\reciboSueldo.resx">
+      <DependentUpon>reciboSueldo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM_Otros\frmActualizarClase.resx">
+      <DependentUpon>frmActualizarClase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM_Otros\frmActualizarPrecio.resx">
+      <DependentUpon>frmActualizarPrecio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM_Otros\frmActualizarProf.resx">
+      <DependentUpon>frmActualizarProf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM_Otros\frmActualizarUsuario.resx">
+      <DependentUpon>frmActualizarUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM_Otros\frmEliminarClase.resx">
+      <DependentUpon>frmEliminarClase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM_Otros\frmEliminarPrecio.resx">
+      <DependentUpon>frmEliminarPrecio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM_Otros\frmEliminarUsuario.resx">
+      <DependentUpon>frmEliminarUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="09_AtencionConNutricionista\frmAtencionConN.resx">
+      <DependentUpon>frmAtencionConN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM_Otros\frmCrearNuevaClase.resx">
+      <DependentUpon>frmCrearNuevaClase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM_Otros\frmEliminarProf.resx">
+      <DependentUpon>frmEliminarProf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIniciarSesion.resx">
+      <DependentUpon>frmIniciarSesion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM_Otros\frmInscribirUsuario.resx">
+      <DependentUpon>frmInscribirUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuAdmi.resx">
+      <DependentUpon>frmMenuAdmi.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ComprobanteDePago.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CredencialDeProfesor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CredencialDeSocio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\firma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgIconoGim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ItinerarioDeProfesor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuario-sin-foto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\iconoGim.ico" />
+    <Content Include="Resources\Planilla.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
